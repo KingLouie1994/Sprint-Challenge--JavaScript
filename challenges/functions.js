@@ -44,7 +44,7 @@ console.log(consume('Mary', 'Poppins', greeting));
 
 // Explanation: 
 
-//We accomplish the building of a closure by creating a function inside a function. The outer function doesn't have access to the inner one but
+// We accomplish the building of a closure by creating a function inside a function. The outer function doesn't have access to the inner one but
 // the inner one can take variables from the outer scope! So the `nestedFunction`-function builds a closure here and so it can use the variable
 // of `myFunction`s scope.
 

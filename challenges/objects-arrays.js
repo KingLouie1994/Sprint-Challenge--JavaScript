@@ -54,7 +54,7 @@ for (let i = 0; i < graduates.length; i++) {
   universities[i] = object.university;
 }
 
-console.log(universities)
+console.log(universities.sort())
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -75,10 +75,10 @@ console.log(contactInfo);
 const uni = [];
 
 for (let i = 0; i < graduates.length; i++) {
-  if (graduates[i].university.includes('Uni') === true) {
+  if (graduates[i].university.includes('Uni')) {
     uni.push(graduates[i].university);
-  } 
-} 
+  }  
+}
 
 console.log(uni);
 
@@ -116,7 +116,7 @@ console.log(animalNames);
 /* Request 2: .map()    
 
 The zoos need a list of all their animal's names (names only, not scientific) converted to lower case.  Create a new array named lowerCase and map over each 
-name to convert them all to lower case.  Log the resut.
+name to convert them all to lower case.  Log the result.
 
 */
 
