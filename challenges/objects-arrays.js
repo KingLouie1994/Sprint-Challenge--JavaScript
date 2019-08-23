@@ -120,7 +120,7 @@ name to convert them all to lower case.  Log the resut.
 
 */
 
-const lowerCase = zooAnimals.map(animal => animal.animal_name);
+const lowerCase = zooAnimals.map(animal => animal.animal_name.toLocaleLowerCase());
 
 console.log(lowerCase);
 
