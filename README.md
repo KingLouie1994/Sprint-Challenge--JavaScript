@@ -31,26 +31,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
-'.forEach' executes a provided function on every array element and '.map' creates a new array with the elements after a provided function was executed on them.
+forEach executes a function for each array element and map creates a completely new array with the results of a function on every element in the array
 
 2. What is the difference between a function and a method?
 
-A function belongs to a class and a method belongs to an object.
+A method is a function when an object is associated with it while a function is just called function when no object is associated with it. In the end everything in JavaScript is an object but that is the difference. 
 
 3. What is closure?
 
-A closure enables access to variables from other funcitons scope 
+A closure gives you access to an outer function's scope from an inner function.
 
 4. Describe the four rules of the 'this' keyword.
 
-- With Window Binding you can add properties to the window object so you can refer to them all over the file
-- When a function is called the "this" keyword refers to the object standing on the left side of the dot.
-- Using New Binding JavaScript refers the "this" keyword to a new object that gets created
-- The first argument you pass to call will be what the "this" keyword inside that function is referencing.
+- Whenever a function is contained in the global scope, the value of this inside of that function will be the window object.
+- Whenever a function is called by a preceding dot, the object before that dot is this.
+- Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function.
+- Whenever JavaScript’s call or apply method is used, this is explicitly defined.
+
+source: https://john-dugan.com/this-in-javascript/
 
 5. Why do we need super() in an extended class?
 
-We need it as a function to pass the parameters of the parent class to the new class what is key to make sure that the new c;ass is an instance of the parent class. 
+We need it as a function to pass the parameters of the parent class to the new class what is key to make sure that the new class is an instance of the parent class.
 
 ## Project Set up
 
